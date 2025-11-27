@@ -14,7 +14,7 @@
 --clr-white: hsl(0, 0%, 100%);
 
 --ff-base: 'Montserrat', sans-serif;
---ff-accent: 'Fraunces', serfif;
+--ff-accent: 'Fraunces', serif;
 
 --fw-regular: 500;
 --fw-bold: 700;
@@ -83,16 +83,18 @@ main {
     margin-block-start: 5rem;
 }
 
+@media (min-width: 48em)  {
+  main {
+    margin-block-start: 17.875rem;
+  }
+}
+
 /* utilities */
 .flex-group {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
-
-    .product__content {
-    gap: 0.75rem;
-    }
 
 }
 
